@@ -42,7 +42,7 @@ if __name__ == '__main__':
          "attack_path": {"62.83.155.175:80-128.55.12.167:8007"}}
     )
 
-    file_path = "data_set/ta1-cadets-e3-official.json"
+    file_path = "data_set"
     # skeys = {"remoteAddress": {"128.55.12.10"}, "remotePort": {53}}
     # file_path = "data_set/ta1-cadets-e3-official-1.json/dist/dist_ta1-cadets-e3-official-1.json"
 
