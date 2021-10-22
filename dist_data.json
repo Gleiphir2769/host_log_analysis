@@ -1,0 +1,2517 @@
+{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'CD514E12-FA52-5CD6-B1F9-61A5B0BB85BF',
+      'sequence': {
+        'long': 4655902
+      },
+      'type': 'EVENT_OPEN',
+      'threadId': {
+        'int': 100197
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '54F9B280-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '76A739B1-A13E-FD50-BEA1-B218A0FD0400'
+      },
+      'predicateObjectPath': {
+        'string': '/lib/libc.so.7'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214537690181,
+      'name': {
+        'string': 'aue_openat_rwtc'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'flags'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '300000'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'mode'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '00'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '3',
+          'return_value': '3',
+          'fd': '-100',
+          'exec': 'sleep',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '19F07AAF-34B0-5981-B28D-D7943CDC4E95',
+      'sequence': {
+        'long': 4655903
+      },
+      'type': 'EVENT_MMAP',
+      'threadId': {
+        'int': 100197
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '54F9B280-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '76A739B1-A13E-FD50-BEA1-B218A0FD0400'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214537690181,
+      'name': {
+        'string': 'aue_mmap'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 6565888
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'partial_path': '/lib/libc.so.7',
+          'fd': '3',
+          'exec': 'sleep',
+          'arg_mem_flags': "['PROT_READ']",
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '0E8D8344-3469-5E50-B123-8BAE4962DC24',
+      'sequence': {
+        'long': 4655909
+      },
+      'type': 'EVENT_CLOSE',
+      'threadId': {
+        'int': 100197
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '54F9B280-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '76A739B1-A13E-FD50-BEA1-B218A0FD0400'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214537690181,
+      'name': {
+        'string': 'aue_close'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'fd': '3',
+          'exec': 'sleep',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'DDFEE7E3-5C05-5D39-B65C-7B2B18DEE090',
+      'sequence': {
+        'long': 4655910
+      },
+      'type': 'EVENT_OPEN',
+      'threadId': {
+        'int': 100197
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '54F9B280-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'F410BE96-4C0C-765E-8C4C-6F0E2E760020'
+      },
+      'predicateObjectPath': {
+        'string': '/dev/hpet0'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214537690181,
+      'name': {
+        'string': 'aue_open_rwtc'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'flags'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '00'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'mode'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '00'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '3',
+          'return_value': '3',
+          'exec': 'sleep',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.FileObject': {
+      'uuid': '5516E748-3A89-11E8-B8CE-15D78AC88FB6',
+      'baseObject': {
+        'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+        'permission': None,
+        'epoch': None,
+        'properties': {
+          'map': {}
+        }
+      },
+      'type': 'FILE_OBJECT_UNIX_SOCKET',
+      'fileDescriptor': None,
+      'localPrincipal': None,
+      'size': None,
+      'peInfo': None,
+      'hashes': None
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'C6AC4C23-88D2-5CF2-906A-8D615E0D96F8',
+      'sequence': {
+        'long': 4655916
+      },
+      'type': 'EVENT_CREATE_OBJECT',
+      'threadId': {
+        'int': 100106
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '269A60A2-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '5516E6E4-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '5516E748-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214727690338,
+      'name': {
+        'string': 'aue_socketpair'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd2': '28',
+          'ret_fd1': '17',
+          'return_value': '0',
+          'exec': 'python2.7',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'C4FCF312-9D03-5A4D-B9B3-DD7E5DA03E34',
+      'sequence': {
+        'long': 4655917
+      },
+      'type': 'EVENT_FCNTL',
+      'threadId': {
+        'int': 100106
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '269A60A2-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122214727690338,
+      'name': {
+        'string': 'aue_fcntl'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'cmd'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '2',
+          'fd': '3',
+          'exec': 'python2.7',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '0DB3780A-C568-52D4-9B62-397D4FD1B20E',
+      'sequence': {
+        'long': 4655935
+      },
+      'type': 'EVENT_WRITE',
+      'threadId': {
+        'int': 100220
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BEEE0F3C-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BEEE00CF-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': {
+        'string': '<unknown>'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122216797690354,
+      'name': {
+        'string': 'aue_write'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 28
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'partial_path': '<unknown>',
+          'fd': '1',
+          'exec': 'imapd',
+          'ppid': '980'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '6B90B5C4-3AA8-57F4-9DB4-508517088DF9',
+      'sequence': {
+        'long': 4656014
+      },
+      'type': 'EVENT_MODIFY_PROCESS',
+      'threadId': {
+        'int': 100198
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BF2998C9-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BF2998C9-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122225487690970,
+      'name': {
+        'string': 'aue_umask'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '18',
+          'exec': 'imapd',
+          'ppid': '980'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '15663B4D-2103-5861-8C86-BB33893E9F01',
+      'sequence': {
+        'long': 4656017
+      },
+      'type': 'EVENT_LINK',
+      'threadId': {
+        'int': 100198
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BF2998C9-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '6D9D93C5-C1CD-2F50-8DC1-9A8C702FB849'
+      },
+      'predicateObjectPath': {
+        'string': '/home/frank/Archives.lock.1523122225.1330.ta1-cadets'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': {
+        'string': '/home/frank/Archives.lock'
+      },
+      'timestampNanos': 1523122225497726129,
+      'name': {
+        'string': 'aue_link'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'imapd',
+          'ppid': '980'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '8C297E32-FD2C-5402-9C84-B481CDDBCB02',
+      'sequence': {
+        'long': 4656018
+      },
+      'type': 'EVENT_UNLINK',
+      'threadId': {
+        'int': 100198
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BF2998C9-39C2-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '6D9D93C5-C1CD-2F50-8DC1-9A8C702FB849'
+      },
+      'predicateObjectPath': {
+        'string': '/home/frank/Archives.lock.1523122225.1330.ta1-cadets'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122225497726129,
+      'name': {
+        'string': 'aue_unlink'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'imapd',
+          'ppid': '980'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'AE238C75-90BD-57C5-A4C2-330BBB5E0678',
+      'sequence': {
+        'long': 4656239
+      },
+      'type': 'EVENT_CONNECT',
+      'threadId': {
+        'int': 100138
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '26F86F5B-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '6AE5F544-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122251317693750,
+      'name': {
+        'string': 'aue_connect'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'address': 'public/qmgr',
+          'fd': '20',
+          'exec': 'master',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '1E500197-7931-5C21-9803-DEF3BF60430B',
+      'sequence': {
+        'long': 4656242
+      },
+      'type': 'EVENT_ACCEPT',
+      'threadId': {
+        'int': 100142
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '26FAD7FF-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '26F9473B-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '6AE61CEB-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122251317693750,
+      'name': {
+        'string': 'aue_accept'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'return_value': '10',
+          'address': '',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '10',
+          'fd': '6',
+          'exec': 'qmgr',
+          'ppid': '876'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Subject': {
+      'uuid': '76F4E32E-3A89-11E8-B8CE-15D78AC88FB6',
+      'type': 'SUBJECT_PROCESS',
+      'cid': 23929,
+      'parentSubject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '65C53022-39C4-11E8-B8CE-15D78AC88FB6'
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'localPrincipal': '26B62C58-E245-578A-AE04-495EBA139703',
+      'startTimestampNanos': 1523122271547689388,
+      'unitId': None,
+      'iteration': None,
+      'count': None,
+      'cmdLine': None,
+      'privilegeLevel': None,
+      'importedLibraries': None,
+      'exportedLibraries': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '5CE557B7-B869-5D6C-97DD-9B74688AABC4',
+      'sequence': {
+        'long': 4656439
+      },
+      'type': 'EVENT_FORK',
+      'threadId': {
+        'int': 100193
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '65C53022-39C4-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '76F4E32E-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122271547689388,
+      'name': {
+        'string': 'aue_fork'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '23929',
+          'exec': 'bash',
+          'arg_pid': '23929',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '63598A5E-0445-52DD-B49E-0EDF895B4136',
+      'sequence': {
+        'long': 4656443
+      },
+      'type': 'EVENT_EXECUTE',
+      'threadId': {
+        'int': 100197
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '76F4E32E-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '330061CF-6BB3-C45E-B36B-B89D7EC4F443'
+      },
+      'predicateObjectPath': {
+        'string': '/usr/bin/vmstat'
+      },
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '7A350F75-9945-425D-8599-15CEBD426F06'
+      },
+      'predicateObject2Path': {
+        'string': '/libexec/ld-elf.so.1'
+      },
+      'timestampNanos': 1523122271547689388,
+      'name': {
+        'string': 'aue_execve'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'cmdLine': '/usr/bin/vmstat -m',
+          'return_value': '-1',
+          'exec': 'bash',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.SrcSinkObject': {
+      'uuid': '783CFC6E-3A89-11E8-B8CE-15D78AC88FB6',
+      'baseObject': {
+        'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+        'permission': None,
+        'epoch': None,
+        'properties': {
+          'map': {}
+        }
+      },
+      'type': 'SRCSINK_IPC',
+      'fileDescriptor': None
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.UnnamedPipeObject': {
+      'uuid': '9AC9A6B1-F2DC-5545-8E42-ABD624073ADE',
+      'baseObject': {
+        'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+        'permission': None,
+        'epoch': None,
+        'properties': {
+          'map': {}
+        }
+      },
+      'sourceFileDescriptor': None,
+      'sinkFileDescriptor': None,
+      'sourceUUID': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '783CFC45-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'sinkUUID': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '783CFC6E-3A89-11E8-B8CE-15D78AC88FB6'
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'E6FC43EF-784B-5EE1-99EB-79102A912FB1',
+      'sequence': {
+        'long': 4656650
+      },
+      'type': 'EVENT_CREATE_OBJECT',
+      'threadId': {
+        'int': 100193
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '65C53022-39C4-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '9AC9A6B1-F2DC-5545-8E42-ABD624073ADE'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122273697688997,
+      'name': {
+        'string': 'aue_pipe'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd2': '4',
+          'ret_fd1': '3',
+          'return_value': '0',
+          'exec': 'bash',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '36EAB6BB-41C6-553B-A015-B63C957F8851',
+      'sequence': {
+        'long': 4656969
+      },
+      'type': 'EVENT_LSEEK',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '0C51AAE3-0594-4A51-9405-4FC4214A0041'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274797690060,
+      'name': {
+        'string': 'aue_lseek'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 1449366864
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'fd': '4',
+          'exec': 'lsof',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'BFC88075-3E1F-5495-8A9E-4EB60DC60065',
+      'sequence': {
+        'long': 4656978
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274807691250,
+      'name': {
+        'string': 'aue_setgid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'gid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03E9'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'arg_gid': '1001',
+          'exec': 'lsof',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.NetFlowObject': {
+      'uuid': '78FEFCAC-3A89-11E8-B8CE-15D78AC88FB6',
+      'baseObject': {
+        'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+        'permission': None,
+        'epoch': None,
+        'properties': {
+          'map': {}
+        }
+      },
+      'localAddress': 'localhost',
+      'localPort': -1,
+      'remoteAddress': '128.55.12.10',
+      'remotePort': 53,
+      'ipProtocol': None,
+      'fileDescriptor': None
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '817CB0B8-6156-576C-A0B0-9FB0F6A46FD0',
+      'sequence': {
+        'long': 4657486
+      },
+      'type': 'EVENT_CONNECT',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78FEFCAC-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274967691469,
+      'name': {
+        'string': 'aue_connect'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'return_value': '0',
+          'address': '128.55.12.10',
+          'port': '53',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'fd': '5',
+          'exec': 'lsof',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'A2FA1DB3-5E70-5B73-AB6F-A70ACDF7E8D5',
+      'sequence': {
+        'long': 4657487
+      },
+      'type': 'EVENT_ADD_OBJECT_ATTRIBUTE',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': None,
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78FEFCAC-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '6440834B-4E1D-5EE2-B0BA-3BBB630E1C87'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274967691469,
+      'name': None,
+      'parameters': None,
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {}
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'FD5F0B67-58FB-54A5-AE70-83EFFEBC6B2F',
+      'sequence': {
+        'long': 4657488
+      },
+      'type': 'EVENT_SENDTO',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78FEFCAC-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274967691469,
+      'name': {
+        'string': 'aue_sendto'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 43
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_msgid': '36028797018974473',
+          'fd': '5',
+          'exec': 'lsof',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '0BE812AA-C971-5FA7-9CE8-B120D810C1F4',
+      'sequence': {
+        'long': 4657489
+      },
+      'type': 'EVENT_RECVFROM',
+      'threadId': {
+        'int': 100227
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78E38FFA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '78FEFCAC-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122274967691469,
+      'name': {
+        'string': 'aue_recvfrom'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 140
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'address': '128.55.12.10',
+          'port': '53',
+          'fd': '5',
+          'exec': 'lsof',
+          'ppid': '1505'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '3867E34B-D117-55AB-B42B-97D78CE2B62C',
+      'sequence': {
+        'long': 4657604
+      },
+      'type': 'EVENT_SENDTO',
+      'threadId': {
+        'int': 100132
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '2398A99C-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '23BF3639-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122276057689572,
+      'name': {
+        'string': 'aue_sendto'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 48
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'address': '10.0.4.2',
+          'port': '123',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_msgid': '108086391056901717',
+          'fd': '23',
+          'exec': 'ntpd',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'E61902E7-D784-5C28-BBFE-D9C8D44FE19A',
+      'sequence': {
+        'long': 4657773
+      },
+      'type': 'EVENT_ACCEPT',
+      'threadId': {
+        'int': 100127
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '26CF82B9-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '26CF9D79-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A473FA-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296187695176,
+      'name': {
+        'string': 'aue_accept'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'return_value': '5',
+          'address': '128.55.12.122',
+          'port': '36700',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '5',
+          'fd': '4',
+          'exec': 'sshd',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'C0D894FB-D2E4-5C1C-9DE5-80CDE23C1452',
+      'sequence': {
+        'long': 4657832
+      },
+      'type': 'EVENT_MPROTECT',
+      'threadId': {
+        'int': 100200
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296217690235,
+      'name': {
+        'string': 'aue_mprotect'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'sshd',
+          'arg_mem_flags': "['PROT_NONE']",
+          'ppid': '802'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'B7E54CF1-08C5-5853-98F4-14B161B34C9A',
+      'sequence': {
+        'long': 4657877
+      },
+      'type': 'EVENT_MODIFY_PROCESS',
+      'threadId': {
+        'int': 100200
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '10A312B0-5B87-B35C-875B-5FF05CB3FD5D'
+      },
+      'predicateObject2Path': {
+        'string': '/'
+      },
+      'timestampNanos': 1523122296237697344,
+      'name': {
+        'string': 'aue_chdir'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'sshd',
+          'ppid': '802'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '4E78D1B3-E1F8-5C69-9868-6869E23E5910',
+      'sequence': {
+        'long': 4657903
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85AE1E37-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85AE1E37-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296247688954,
+      'name': {
+        'string': 'aue_setresgid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'gid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'egid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'sgid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'arg_rgid': '22',
+          'return_value': '0',
+          'arg_egid': '22',
+          'arg_sgid': '22',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'BD6553FC-5626-5EF2-9168-DC440ADA2D7F',
+      'sequence': {
+        'long': 4657904
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85AE1E37-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85AE1E37-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296247688954,
+      'name': {
+        'string': 'aue_setresuid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'uid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'euid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'suid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '16'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'arg_euid': '22',
+          'return_value': '0',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_suid': '22',
+          'arg_ruid': '22',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'B76C39C4-6725-5943-AC4F-C1E611E06D70',
+      'sequence': {
+        'long': 4657927
+      },
+      'type': 'EVENT_FCNTL',
+      'threadId': {
+        'int': 100200
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296377689029,
+      'name': {
+        'string': 'aue_fcntl'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'cmd'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '11'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '9',
+          'return_value': '9',
+          'fd': '8',
+          'exec': 'sshd',
+          'ppid': '802'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'E7C9175C-6550-57C0-99DD-932274E3C631',
+      'sequence': {
+        'long': 4657976
+      },
+      'type': 'EVENT_RECVFROM',
+      'threadId': {
+        'int': 100131
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '22AB23C6-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '22AAB8BA-39BE-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296387690978,
+      'name': {
+        'string': 'aue_recvfrom'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 65
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_msgid': '72057594037937096',
+          'address': '',
+          'fd': '9',
+          'exec': 'syslogd',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'A9687C23-9803-5E56-B64B-DE2AEAAEA0BD',
+      'sequence': {
+        'long': 4658080
+      },
+      'type': 'EVENT_LOGIN',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296547692482,
+      'name': {
+        'string': 'aue_setlogin'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'login': 'user',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'D6D783C9-26EC-5DC7-90F3-605B32F9F64F',
+      'sequence': {
+        'long': 4658083
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296547692482,
+      'name': {
+        'string': 'aue_setuid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'uid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03ED'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_uid': '1005',
+          'return_value': '0',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'CC17D7AA-B2D4-5517-877B-B4938698A45C',
+      'sequence': {
+        'long': 4658084
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296547692482,
+      'name': {
+        'string': 'aue_setegid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'egid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03ED'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'arg_egid': '1005',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'A43C23A4-FDFC-57F3-AB9B-F1BB5CE16591',
+      'sequence': {
+        'long': 4658085
+      },
+      'type': 'EVENT_CHANGE_PRINCIPAL',
+      'threadId': {
+        'int': 100203
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85DAB277-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296547692482,
+      'name': {
+        'string': 'aue_seteuid'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'euid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03ED'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_euid': '1005',
+          'return_value': '0',
+          'exec': 'sshd',
+          'ppid': '23939'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '2F999631-82C1-5E15-97A3-51B5C38BF8EE',
+      'sequence': {
+        'long': 4658109
+      },
+      'type': 'EVENT_OTHER',
+      'threadId': {
+        'int': 100200
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296597688970,
+      'name': {
+        'string': 'aue_posix_openpt'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '8',
+          'return_value': '8',
+          'exec': 'sshd',
+          'ppid': '802'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '1FC0D659-388B-57E1-BB56-DF081ED98173',
+      'sequence': {
+        'long': 4658124
+      },
+      'type': 'EVENT_MODIFY_FILE_ATTRIBUTES',
+      'threadId': {
+        'int': 100200
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85A4C209-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'C0E60490-62BE-7B5A-BE62-6F2DBA7BA087'
+      },
+      'predicateObjectPath': {
+        'string': '/dev/pts/1'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122296607698170,
+      'name': {
+        'string': 'aue_chown'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'uid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '03ED'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'gid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '04'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_uid': '1005',
+          'return_value': '0',
+          'arg_gid': '4',
+          'exec': 'sshd',
+          'ppid': '802'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '743599A1-6244-58B0-8193-7F27B7B180D7',
+      'sequence': {
+        'long': 4658653
+      },
+      'type': 'EVENT_SIGNAL',
+      'threadId': {
+        'int': 100199
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85E70F73-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85E70F73-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523122326847688959,
+      'name': {
+        'string': 'aue_kill'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'pid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '5D87'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'signum'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '01'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'arg_euid': '1005',
+          'arg_rgid': '1005',
+          'return_value': '0',
+          'arg_egid': '1005',
+          'address': '',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_ruid': '1005',
+          'exec': 'bash',
+          'arg_pid': '23943',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'B5BFA8A1-AE0B-5DBA-B1F8-222FBE539696',
+      'sequence': {
+        'long': 4658665
+      },
+      'type': 'EVENT_RENAME',
+      'threadId': {
+        'int': 100199
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '85E70F73-3A89-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'B9600A67-F063-2B57-A3F0-EA1B372BF5E3'
+      },
+      'predicateObjectPath': {
+        'string': '/home/user/.bash_history-23943.tmp'
+      },
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'B9600A67-F063-2B57-A3F0-EA1B372BF5E3'
+      },
+      'predicateObject2Path': {
+        'string': '/home/user/.bash_history'
+      },
+      'timestampNanos': 1523122326857688878,
+      'name': {
+        'string': 'aue_rename'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'bash',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '5CDD91B5-F8FA-53EC-BC86-81896FF0FDDD',
+      'sequence': {
+        'long': 4694733
+      },
+      'type': 'EVENT_SIGNAL',
+      'threadId': {
+        'int': 100261
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '407E2366-3A8B-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523123160177670483,
+      'name': {
+        'string': 'aue_kill'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'pid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': 'A1BE'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'signum'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '01'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'exec': 'bash',
+          'arg_pid': '-24130',
+          'ppid': '1'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '968352E1-DD64-5B23-9076-51E2EDDEE10B',
+      'sequence': {
+        'long': 4719628
+      },
+      'type': 'EVENT_MODIFY_PROCESS',
+      'threadId': {
+        'int': 100384
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '23F7115A-3A8D-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '23F7115A-3A8D-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'FD1A9324-943E-575D-BE94-3A127D57A32E'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523123850307657296,
+      'name': {
+        'string': 'aue_fchdir'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'return_value': '0',
+          'fd': '4',
+          'exec': 'find',
+          'ppid': '24329'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '16255EA2-FFC1-590E-92CA-EB764EB6E7A6',
+      'sequence': {
+        'long': 5963747
+      },
+      'type': 'EVENT_MODIFY_FILE_ATTRIBUTES',
+      'threadId': {
+        'int': 100219
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'CDD0DA25-3ABF-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '5BA82794-CF30-3C55-B0CF-7405953CC784'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523145610877166598,
+      'name': {
+        'string': 'aue_fchown'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'uid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '00'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'gid'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '00'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'return_value': '0',
+          'arg_gid': '0',
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'arg_uid': '0',
+          'fd': '4',
+          'exec': 'bzip2',
+          'ppid': '30441'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'C5920382-0688-56CC-8DDA-7E5291FC2EE8',
+      'sequence': {
+        'long': 6464227
+      },
+      'type': 'EVENT_FLOWS_TO',
+      'threadId': {
+        'int': 100211
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '1106A7CE-3AD9-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '1633500B-D34B-8058-8BD3-ABB7D880915E'
+      },
+      'predicateObjectPath': None,
+      'predicateObject2': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '1633500B-D34B-8058-8BD3-ABB7D880915E'
+      },
+      'predicateObject2Path': None,
+      'timestampNanos': 1523156460286924981,
+      'name': None,
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {}
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': 'EF402E44-E291-5874-AF8E-5AEB53CA840A',
+      'sequence': {
+        'long': 6464226
+      },
+      'type': 'EVENT_READ',
+      'threadId': {
+        'int': 100211
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '1106A7CE-3AD9-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '1633500B-D34B-8058-8BD3-ABB7D880915E'
+      },
+      'predicateObjectPath': {
+        'string': '/dev/null'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523156460286924981,
+      'name': {
+        'string': 'aue_read'
+      },
+      'parameters': {
+        'array': []
+      },
+      'location': None,
+      'size': {
+        'long': 0
+      },
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_miouuid': '1633500b-d34b-8058-8bd3-abb7d880915e',
+          'partial_path': '/dev/null',
+          'fd': '3',
+          'exec': 'cp',
+          'ppid': '33221'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Event': {
+      'uuid': '6BBB429E-97BB-54AB-8A1B-0366F5E92032',
+      'sequence': {
+        'long': 6464484
+      },
+      'type': 'EVENT_OPEN',
+      'threadId': {
+        'int': 100140
+      },
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'subject': {
+        'com.bbn.tc.schema.avro.cdm18.UUID': '11168990-3AD9-11E8-B8CE-15D78AC88FB6'
+      },
+      'predicateObject': None,
+      'predicateObjectPath': {
+        'string': '/dev/stderr'
+      },
+      'predicateObject2': None,
+      'predicateObject2Path': None,
+      'timestampNanos': 1523156460396925337,
+      'name': {
+        'string': 'aue_openat_rwtc'
+      },
+      'parameters': {
+        'array': [
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'flags'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '0601'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          },
+          {
+            'size': -1,
+            'type': 'VALUE_TYPE_CONTROL',
+            'valueDataType': 'VALUE_DATA_TYPE_INT',
+            'isNull': False,
+            'name': {
+              'string': 'mode'
+            },
+            'runtimeDataType': None,
+            'valueBytes': {
+              'bytes': '01B6'
+            },
+            'provenance': None,
+            'tag': None,
+            'components': None
+          }
+        ]
+      },
+      'location': None,
+      'size': None,
+      'programPoint': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851',
+          'ret_fd1': '3',
+          'return_value': '3',
+          'fd': '-100',
+          'exec': 'tee',
+          'ppid': '33228'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}{
+  'datum': {
+    'com.bbn.tc.schema.avro.cdm18.Subject': {
+      'uuid': '3576A88E-3AD9-11E8-B8CE-15D78AC88FB6',
+      'type': 'SUBJECT_PROCESS',
+      'cid': 33343,
+      'parentSubject': None,
+      'hostId': '83C8ED1F-5045-DBCD-B39F-918F0DF4F851',
+      'localPrincipal': '26B62C58-E245-578A-AE04-495EBA139703',
+      'startTimestampNanos': 0,
+      'unitId': None,
+      'iteration': None,
+      'count': None,
+      'cmdLine': None,
+      'privilegeLevel': None,
+      'importedLibraries': None,
+      'exportedLibraries': None,
+      'properties': {
+        'map': {
+          'host': '83c8ed1f-5045-dbcd-b39f-918f0df4f851'
+        }
+      }
+    }
+  },
+  'CDMVersion': '18',
+  'source': 'SOURCE_FREEBSD_DTRACE_CADETS'
+}
