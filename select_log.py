@@ -121,7 +121,7 @@ def multi_select_special_logs(path_list, skey_set, check_func, prefix=""):
 
     task_names = ['task' + str(v) for v in range(len(path_list))]
     pool = mp.Pool(num_cores)
-    param_dict = zip(task_names, file_paths)
+    param_dict = zip(task_names, path_list)
     results = [pool.apply_async(select_special_logs, args=(name, param, skey_set, check_func, prefix)) for name, param
                in
                param_dict]
