@@ -29,9 +29,19 @@ def check_special_keys(source, dist):
     return False
 
 
-def check_special_values(source, dist):
+def check_special_kvs(source, dist):
     for k, v in source.items():
         if dist.__contains__(k) and v in dist[k]:
+            return True
+        if isinstance(v, dict):
+            if check_special_kvs(v, dist):
+                return True
+    return False
+
+
+def check_special_values(source, dist):
+    for k, v in source.items():
+        if dist.__contains__(v):
             return True
         if isinstance(v, dict):
             if check_special_values(v, dist):
@@ -49,6 +59,21 @@ def check_ip_port(source, dist):
                     return True
                 return False
             if check_ip_port(v, dist):
+                return True
+    return False
+
+
+def check_with_path(source, dist):
+    for k, v in source.items():
+        if isinstance(v, dict):
+            if v.__contains__("predicateObjectPath"):
+                if (v["predicateObjectPath"] is not None and v["predicateObjectPath"].__contains__(
+                        "string") and utils.set_contained(dist["path"], v["predicateObjectPath"]["string"])) or (
+                        v["predicateObject2Path"] is not None and v["predicateObject2Path"].__contains__(
+                    "string") and utils.set_contained(dist["path"], v["predicateObject2Path"]["string"])):
+                    return True
+                return False
+            if check_with_path(v, dist):
                 return True
     return False
 
@@ -71,7 +96,8 @@ def ip_port(ip, port):
 
 def select_special_logs(task_name, file_path, skey_set, check_func, prefix=""):
     buffer = queue.Queue(1024 * 1024)
-    output_path = "/".join(file_path.split("/")[:-1]) + '/dist/' + prefix + "/"
+    # todo: check
+    output_path = os.path.join("dist", prefix)
     dist_filename = "dist_" + str(file_path.split("/")[-1])
     event = threading.Event()
     t = threading.Thread(target=write_special_logs, args=(output_path, dist_filename, event, buffer))
@@ -103,7 +129,7 @@ def write_special_logs(path, filename, event, buffer):
         except OSError:
             pass
 
-    with open(path + filename, 'w',
+    with open(os.path.join(path, filename), 'w',
               encoding='utf-8') as df:
         while True:
             try:
@@ -112,6 +138,9 @@ def write_special_logs(path, filename, event, buffer):
             except queue.Empty:
                 if event.isSet():
                     break
+
+    if os.path.getsize(os.path.join(path, filename)) == 0:
+        os.remove(os.path.join(path, filename))
 
 
 def multi_select_special_logs(path_list, skey_set, check_func, prefix=""):
@@ -139,5 +168,3 @@ def serial_multi_select_special_logs(path_list, skeys_list, check_func, attack_l
         sys.exit(-1)
     for i in range(len(skeys_list)):
         multi_select_special_logs(path_list, skeys_list[i], check_func, attack_list[i])
-
-

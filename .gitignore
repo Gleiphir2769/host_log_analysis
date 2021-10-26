@@ -24,3 +24,5 @@ log/
 tools/
 logs/
 data_set/
+dist/
+temp/

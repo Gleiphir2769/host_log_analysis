@@ -70,4 +70,4 @@ def multi_select_unique(data_set_path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    multi_select_unique('data_set')
+    multi_select_unique('data_set/ta1-cadets-e3-official.json/ta1-cadets-e3-official.json')

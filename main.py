@@ -1,5 +1,5 @@
 import utils
-from select_log import serial_multi_select_special_logs, check_ip_port
+import select_log
 
 if __name__ == '__main__':
     skeys_list = []
@@ -38,14 +38,38 @@ if __name__ == '__main__':
     )
 
     skeys_list.append(
-        {"remoteAddress": {"62.83.155.175:80"},
+        {"remoteAddress": {"62.83.155.175"},
          "attack_path": {"62.83.155.175:80-128.55.12.167:8007"}}
     )
 
     file_path = "data_set"
-    # skeys = {"remoteAddress": {"128.55.12.10"}, "remotePort": {53}}
-    # file_path = "data_set/ta1-cadets-e3-official-1.json/dist/dist_ta1-cadets-e3-official-1.json"
 
     file_paths = utils.clean_data_files(utils.items_dir(file_path))
 
-    serial_multi_select_special_logs(file_paths, skeys_list, check_ip_port, attack_list)
+    # ip路径筛选测试
+    # serial_multi_select_special_logs(file_paths, skeys_list, check_ip_port, attack_list)
+
+    # path筛选测试
+    # path_list = []
+    #
+    # path_list.append(
+    #     {
+    #         # "path": {"/deploy/archive/drakon.freebsd.x64_139.123.0.113",
+    #         #               "/tmp/vUgefal",
+    #         #               "/deploy/archive/libdrakon.freebsd.x64.so_152.111.159.139",
+    #         #               "/var/log/devc",
+    #         #               "/var/log/devc"}
+    #         "path": {"drakon.freebsd.x64_139.123.0.113"}
+    #     }
+    # )
+    # select_log.multi_select_special_logs(file_paths, path_list[0], select_log.check_with_path)
+
+    # 仅筛选恶意ip测试
+    remote_ip = {
+        "remoteAddress": {"81.49.200.166", "78.205.235.65", "200.36.109.214", "139.123.0.113", "152.111.159.139",
+                          "154.143.113.18", "61.167.39.128", "25.159.96.207", "76.56.184.25", "155.162.39.48",
+                          " 198.115.236.119", "25.159.96.207", "76.56.184.25", "155.162.39.48", "198.115.236.119",
+                          "53.158.101.118", "98.15.44.232", "192.113.144.28", "25.159.96.207", "76.56.184.25",
+                          "155.162.39.48", "198.115.236.119", "53.158.101.118"
+                          }}
+    select_log.multi_select_special_logs(file_paths, remote_ip, select_log.check_special_kvs)

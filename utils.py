@@ -26,5 +26,52 @@ def clean_data_files(files: List):
     return files
 
 
+def set_contains(source_set, dist_str):
+    for item in source_set:
+        if item.__contains__(dist_str):
+            return True
+    return False
+
+
+def set_contained(source_set, dist_str):
+    for item in source_set:
+        if dist_str.__contains__(item):
+            return True
+    return False
+
+
+def rm_empty(path):
+    files = os.listdir(path)  # 获取路径下的子文件(夹)列表
+    for file in files:
+        print('Traversal at', file)
+        if os.path.isdir(file):  # 如果是文件夹
+            if not os.listdir(file):  # 如果子文件为空
+                os.rmdir(file)  # 删除这个空文件夹
+        elif os.path.isfile(file):  # 如果是文件
+            if os.path.getsize(file) == 0:  # 文件大小为0
+                os.remove(file)  # 删除这个文件
+    print(path, 'Dispose over!')
+
+
+def rm_spec_dir(root, name):
+    files = os.listdir(root)
+    cnt = 0
+    for file in files:
+        if os.path.isdir(file) and file.split('/')[-1] == name:
+            os.rmdir(file)
+            cnt += 1
+    print(root, 'Dispose over!', cnt, "target directions have been removed")
+
+
+def rm_spec_file(root, name):
+    files = os.listdir(root)
+    cnt = 0
+    for file in files:
+        if os.path.isfile(file) and file.split('/')[-1] == name:
+            os.remove(file)
+            cnt += 1
+    print(root, 'Dispose over!', cnt, "target files have been removed")
+
+
 if __name__ == '__main__':
     print(clean_data_files(items_dir("data_set")))
