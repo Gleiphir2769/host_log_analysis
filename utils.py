@@ -1,5 +1,7 @@
 import os
+import shutil
 from typing import List
+from shutil import rmtree
 
 
 def items_dir(root_path):
@@ -54,24 +56,27 @@ def rm_empty(path):
 
 
 def rm_spec_dir(root, name):
-    files = os.listdir(root)
     cnt = 0
-    for file in files:
-        if os.path.isdir(file) and file.split('/')[-1] == name:
-            os.rmdir(file)
-            cnt += 1
+    for main_dir, dirs, file_name_list in os.walk(root):
+        for dir in dirs:
+            dir_path = os.path.join(main_dir, dir)
+            if dir_path.split('/')[-1] == name:
+                shutil.rmtree(dir_path)
+                cnt += 1
     print(root, 'Dispose over!', cnt, "target directions have been removed")
 
 
 def rm_spec_file(root, name):
-    files = os.listdir(root)
     cnt = 0
-    for file in files:
-        if os.path.isfile(file) and file.split('/')[-1] == name:
-            os.remove(file)
-            cnt += 1
+    for main_dir, dirs, file_name_list in os.walk(root):
+        for file in file_name_list:
+            file_path = os.path.join(main_dir, file)
+            if file.split('/')[-1] == name:
+                os.remove(file_path)
+                cnt += 1
+
     print(root, 'Dispose over!', cnt, "target files have been removed")
 
 
 if __name__ == '__main__':
-    print(clean_data_files(items_dir("data_set")))
+    rm_spec_dir('data_set', 'dist')

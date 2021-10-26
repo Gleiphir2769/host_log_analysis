@@ -11,6 +11,7 @@ from collections import deque
 
 import utils
 
+mutex = threading.Lock()
 
 def get_all_keys(dt):
     all_key = []
@@ -94,13 +95,13 @@ def ip_port(ip, port):
     return str(ip) + ":" + str(port)
 
 
-def select_special_logs(task_name, file_path, skey_set, check_func, prefix=""):
+def select_special_logs(task_name, file_path, output_path, skey_set, check_func):
     buffer = queue.Queue(1024 * 1024)
     # todo: check
-    output_path = os.path.join("dist", prefix)
-    dist_filename = "dist_" + str(file_path.split("/")[-1])
+    # output_path = os.path.join("dist", prefix)
+    # dist_filename = "dist_"  + str(file_path.split("/")[-1])
     event = threading.Event()
-    t = threading.Thread(target=write_special_logs, args=(output_path, dist_filename, event, buffer))
+    t = threading.Thread(target=write_special_logs, args=(output_path, event, buffer))
     t.start()
     with open(file_path, 'r', encoding='utf-8') as f:
         count = 0
@@ -122,14 +123,21 @@ def select_special_logs(task_name, file_path, skey_set, check_func, prefix=""):
     return {task_name: True}
 
 
-def write_special_logs(path, filename, event, buffer):
-    if not os.path.exists(path):
+def write_special_logs(output_path, event, buffer):
+    output_dir = "/".join(output_path.split("/")[:-1])
+    if not os.path.exists(output_dir):
         try:
-            os.makedirs(path)
+            os.makedirs(output_dir)
         except OSError:
             pass
 
-    with open(os.path.join(path, filename), 'w',
+    mutex.acquire()
+    if not os.path.exists(output_path):
+        file = open(output_path, 'w', encoding='utf-8')
+        file.close()
+    mutex.release()
+
+    with open(output_path, 'a',
               encoding='utf-8') as df:
         while True:
             try:
@@ -139,11 +147,8 @@ def write_special_logs(path, filename, event, buffer):
                 if event.isSet():
                     break
 
-    if os.path.getsize(os.path.join(path, filename)) == 0:
-        os.remove(os.path.join(path, filename))
 
-
-def multi_select_special_logs(path_list, skey_set, check_func, prefix=""):
+def multi_select_special_logs(path_list, skey_set, check_func, output_path):
     start_t = datetime.datetime.now()
     num_cores = int(mp.cpu_count())
     print("本地计算机有: " + str(num_cores) + " 核心")
@@ -151,7 +156,7 @@ def multi_select_special_logs(path_list, skey_set, check_func, prefix=""):
     task_names = ['task' + str(v) for v in range(len(path_list))]
     pool = mp.Pool(num_cores)
     param_dict = zip(task_names, path_list)
-    results = [pool.apply_async(select_special_logs, args=(name, param, skey_set, check_func, prefix)) for name, param
+    results = [pool.apply_async(select_special_logs, args=(name, param, output_path, skey_set, check_func)) for name, param
                in
                param_dict]
     for p in results:
@@ -167,4 +172,4 @@ def serial_multi_select_special_logs(path_list, skeys_list, check_func, attack_l
         print("num of skeys '{}' are not matched num of attack_list '{}'".format(len(skeys_list), len(attack_list)))
         sys.exit(-1)
     for i in range(len(skeys_list)):
-        multi_select_special_logs(path_list, skeys_list[i], check_func, attack_list[i])
+        multi_select_special_logs(path_list, skeys_list[i], check_func, os.path.join('dist', 'attack_list[i]', datetime.datetime.now().strftime('%Y%m%d_%H_%M_%S')+'.json'))

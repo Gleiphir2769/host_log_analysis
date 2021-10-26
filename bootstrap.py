@@ -1,3 +1,6 @@
+import os.path
+
 import utils
 
-utils.rm_spec_dir("data_set", "dist")
+if __name__ == '__main__':
+    utils.rm_spec_dir(os.path.join('data_set'), "dist")

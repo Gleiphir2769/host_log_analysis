@@ -1,3 +1,6 @@
+import os.path
+import datetime
+
 import utils
 import select_log
 
@@ -72,4 +75,7 @@ if __name__ == '__main__':
                           "53.158.101.118", "98.15.44.232", "192.113.144.28", "25.159.96.207", "76.56.184.25",
                           "155.162.39.48", "198.115.236.119", "53.158.101.118"
                           }}
-    select_log.multi_select_special_logs(file_paths, remote_ip, select_log.check_special_kvs)
+
+    path = os.path.join('dist', datetime.datetime.now().strftime('%Y%m%d_%H_%M_%S') + '.json')
+
+    select_log.multi_select_special_logs(file_paths, remote_ip, select_log.check_special_kvs, path)
