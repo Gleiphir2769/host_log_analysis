@@ -26,3 +26,4 @@ logs/
 data_set/
 dist/
 temp/
+tmp/

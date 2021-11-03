@@ -740,7 +740,7 @@
         'com.bbn.tc.schema.avro.cdm18.UUID': '76F4E32E-3A89-11E8-B8CE-15D78AC88FB6'
       },
       'predicateObject': {
-        'com.bbn.tc.schema.avro.cdm18.UUID': '330061CF-6BB3-C45E-B36B-B89D7EC4F443'
+        'com.bbn.tc.schema.avro.cdm18.UUID': 'BA00F667-3DBB-11E8-B8CE-15D78AC88FB6'
       },
       'predicateObjectPath': {
         'string': '/usr/bin/vmstat'

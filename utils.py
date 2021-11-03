@@ -78,5 +78,97 @@ def rm_spec_file(root, name):
     print(root, 'Dispose over!', cnt, "target files have been removed")
 
 
+def get_all_keys(dt):
+    if dt is None:
+        return None
+    all_key = []
+    for k in dt:
+        if isinstance(dt[k], dict):
+            all_key += get_all_keys(dt[k])
+        all_key.append(k)
+    return all_key
+
+
+def get_all_values(dt):
+    if dt is None:
+        return None
+    all_value = []
+    for _, v in dt.items():
+        if isinstance(v, dict):
+            all_value += get_all_values(v)
+        all_value.append(v)
+    return all_value
+
+
+def check_special_keys(source, dist):
+    if source is None or dist is None:
+        return False
+    data_keys = get_all_keys(source)
+    for k in data_keys:
+        if dist.__contains__(k):
+            return True
+    return False
+
+
+def check_special_kvs(source, dist):
+    if source is None or dist is None:
+        return False
+    for k, v in source.items():
+        if dist.__contains__(k) and v in dist[k]:
+            return True
+        if isinstance(v, dict):
+            if check_special_kvs(v, dist):
+                return True
+    return False
+
+
+def check_special_values(source, dist):
+    if source is None or dist is None:
+        return False
+    for _, v in source.items():
+        if isinstance(v, dict):
+            if check_special_values(v, dist):
+                return True
+        else:
+            if v is not None and dist.__contains__(str(v)):
+                return True
+    return False
+
+
+def check_ip_port(source, dist):
+    if source is None or dist is None:
+        return False
+    for k, v in source.items():
+        if isinstance(v, dict):
+            if v.__contains__("remoteAddress") and v["remoteAddress"] in dist["remoteAddress"]:
+                attack_path = ip_port(v["remoteAddress"], v["remotePort"]) + "-" + ip_port(v["localAddress"],
+                                                                                           v["localPort"])
+                if attack_path in dist["attack_path"]:
+                    return True
+                return False
+            if check_ip_port(v, dist):
+                return True
+    return False
+
+
+def check_with_path(source, dist):
+    for k, v in source.items():
+        if isinstance(v, dict):
+            if v.__contains__("predicateObjectPath"):
+                if (v["predicateObjectPath"] is not None and v["predicateObjectPath"].__contains__(
+                        "string") and set_contained(dist["path"], v["predicateObjectPath"]["string"])) or (
+                        v["predicateObject2Path"] is not None and v["predicateObject2Path"].__contains__(
+                    "string") and set_contained(dist["path"], v["predicateObject2Path"]["string"])):
+                    return True
+                return False
+            if check_with_path(v, dist):
+                return True
+    return False
+
+
+def ip_port(ip, port):
+    return str(ip) + ":" + str(port)
+
+
 if __name__ == '__main__':
     rm_spec_dir('data_set', 'dist')
