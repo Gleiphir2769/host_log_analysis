@@ -7,13 +7,8 @@ import threading
 import multiprocessing as mp
 from tqdm import tqdm
 import json
-from collections import deque
-
-import utils
 
 mutex = threading.Lock()
-
-
 
 
 def select_special_logs(task_name, file_path, output_path, skey_set, check_func):

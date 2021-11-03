@@ -1,7 +1,6 @@
 import os
 import shutil
 from typing import List
-from shutil import rmtree
 
 
 def items_dir(root_path):
